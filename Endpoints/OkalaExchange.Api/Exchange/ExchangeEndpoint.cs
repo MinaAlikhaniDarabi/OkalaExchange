@@ -15,7 +15,7 @@ namespace OkalaExchange.Api.Exchange
                 var result = new GetLatestQuotesResponseModel();
                 var targetCurrencies = new[]
                {
-                    "USD",
+                    
                     "EUR",
                     "BRL",
                     "GBP",
@@ -29,6 +29,7 @@ namespace OkalaExchange.Api.Exchange
                 };
              
         var response = await mediator.Send(query);
+                result.CryptoQuote = response;
                 return new BaseResponse<GetLatestQuotesResponseModel>() { Data = result };
 
             });

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OkalaExchange.Domain.Exchage.ValueObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace OkalaExchange.Contracts.Exchange.Endpoints
 {
     public class GetLatestQuotesResponseModel
     {
-
+        public CryptoQuote CryptoQuote { get; set; }
     }
 }

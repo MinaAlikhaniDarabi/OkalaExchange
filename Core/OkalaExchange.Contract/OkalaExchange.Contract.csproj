@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OkalaExchange.Domain\OkalaExchange.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

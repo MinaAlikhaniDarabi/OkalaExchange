@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using OkalaExchange.Contract.Exchange.ExternalServices;
 using OkalaExchange.Contracts.Exchange.ExternalServices;
 using System.Net.Http.Json;
 using System.Text.Json;
@@ -42,18 +43,25 @@ namespace OkalaExchange.Infra.ExternalServices.CryptoService
         }
         public async Task<Dictionary<string, decimal>> GetExchangeRatesAsync(string baseCurrency, IEnumerable<string> currencies)
         {
+
             var symbols = string.Join(",", currencies);
             var url = $"{_exchangeRatesBaseUrl}/latest?base={baseCurrency}&symbols={symbols}&apikey={_exchangeRatesApiKey}";
 
             var response = await _httpClient.GetFromJsonAsync<dynamic>(url);
-
+            var result = JsonSerializer.Deserialize<ExchangeRateResponse>(response, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            });
             var rates = new Dictionary<string, decimal>();
             foreach (var currency in currencies)
             {
-                rates[currency] = (decimal)response.rates[currency];
+                rates[currency] = (decimal)result.Rates[currency];
             }
 
             return rates;
         }
     }
+
+
+
 }
