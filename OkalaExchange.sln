@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FCB47272-1E0A-42BC-A217-C72A22D0BD1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{47374514-62A9-4ABE-96E5-F344BDE35E89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{393F76D9-59EC-44BB-97E5-5C87EF7A045D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkalaExchange.Domain", "Core\OkalaExchange.Domain\OkalaExchange.Domain.csproj", "{BD26B7BE-FCF0-427D-BB92-FEBEF81B24EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkalaExchange.ApplicationService", "Core\OkalaExchange.ApplicationService\OkalaExchange.ApplicationService.csproj", "{BEEDE89A-5436-4B2B-86E1-5ADB76F241D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Endpoints", "Endpoints", "{160ED6C9-5F95-4701-8765-EA0C71DE7B81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{207FEBDA-B762-4DA9-B0C3-77B5699A5895}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkalaExchange.Api", "Endpoints\OkalaExchange.Api\OkalaExchange.Api.csproj", "{EAEB72EE-9149-43AD-A593-E9F684F092CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkalaExchange.Infra.ExternalServices.CryptoService", "Infra\ExternalServices\OkalaExchange.Infra.ExternalServices.CryptoService\OkalaExchange.Infra.ExternalServices.CryptoService.csproj", "{E2FDCD79-FBD1-4AA7-98B2-E8A2BF32EE35}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalServices", "ExternalServices", "{762C709D-D185-45CF-843F-E04EE04FDD99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkalaExchange.Contract", "Core\OkalaExchange.Contract\OkalaExchange.Contract.csproj", "{09273BDD-0CB3-4072-91ED-3DF04674B767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkalaExchange.Test", "OkalaExchange.Test\OkalaExchange.Test.csproj", "{4DF6178D-6DF9-4855-8247-DF43E449DC45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD26B7BE-FCF0-427D-BB92-FEBEF81B24EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD26B7BE-FCF0-427D-BB92-FEBEF81B24EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD26B7BE-FCF0-427D-BB92-FEBEF81B24EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD26B7BE-FCF0-427D-BB92-FEBEF81B24EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEEDE89A-5436-4B2B-86E1-5ADB76F241D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEEDE89A-5436-4B2B-86E1-5ADB76F241D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEEDE89A-5436-4B2B-86E1-5ADB76F241D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEEDE89A-5436-4B2B-86E1-5ADB76F241D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAEB72EE-9149-43AD-A593-E9F684F092CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAEB72EE-9149-43AD-A593-E9F684F092CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAEB72EE-9149-43AD-A593-E9F684F092CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAEB72EE-9149-43AD-A593-E9F684F092CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2FDCD79-FBD1-4AA7-98B2-E8A2BF32EE35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2FDCD79-FBD1-4AA7-98B2-E8A2BF32EE35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2FDCD79-FBD1-4AA7-98B2-E8A2BF32EE35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2FDCD79-FBD1-4AA7-98B2-E8A2BF32EE35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09273BDD-0CB3-4072-91ED-3DF04674B767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09273BDD-0CB3-4072-91ED-3DF04674B767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09273BDD-0CB3-4072-91ED-3DF04674B767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09273BDD-0CB3-4072-91ED-3DF04674B767}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DF6178D-6DF9-4855-8247-DF43E449DC45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF6178D-6DF9-4855-8247-DF43E449DC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF6178D-6DF9-4855-8247-DF43E449DC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF6178D-6DF9-4855-8247-DF43E449DC45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{393F76D9-59EC-44BB-97E5-5C87EF7A045D} = {FCB47272-1E0A-42BC-A217-C72A22D0BD1C}
+		{BD26B7BE-FCF0-427D-BB92-FEBEF81B24EE} = {393F76D9-59EC-44BB-97E5-5C87EF7A045D}
+		{BEEDE89A-5436-4B2B-86E1-5ADB76F241D3} = {393F76D9-59EC-44BB-97E5-5C87EF7A045D}
+		{160ED6C9-5F95-4701-8765-EA0C71DE7B81} = {FCB47272-1E0A-42BC-A217-C72A22D0BD1C}
+		{207FEBDA-B762-4DA9-B0C3-77B5699A5895} = {FCB47272-1E0A-42BC-A217-C72A22D0BD1C}
+		{EAEB72EE-9149-43AD-A593-E9F684F092CE} = {160ED6C9-5F95-4701-8765-EA0C71DE7B81}
+		{E2FDCD79-FBD1-4AA7-98B2-E8A2BF32EE35} = {762C709D-D185-45CF-843F-E04EE04FDD99}
+		{762C709D-D185-45CF-843F-E04EE04FDD99} = {207FEBDA-B762-4DA9-B0C3-77B5699A5895}
+		{09273BDD-0CB3-4072-91ED-3DF04674B767} = {393F76D9-59EC-44BB-97E5-5C87EF7A045D}
+		{4DF6178D-6DF9-4855-8247-DF43E449DC45} = {47374514-62A9-4ABE-96E5-F344BDE35E89}
+	EndGlobalSection
+EndGlobal
